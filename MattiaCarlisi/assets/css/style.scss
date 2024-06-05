@@ -72,6 +72,7 @@ header{
             text-decoration: none;
             font-size: 20px;
         }
+        
 }
 
 /*this is main*/
@@ -87,17 +88,26 @@ header{
 
 .video-container {
     display: flex;
-    justify-content:space-around; 
-    align-items: center; 
-
+    flex-wrap: wrap; 
+    justify-content: space-around;
 
     .video-tips {
-        margin-top:80px;
-        width: 300px;
+        width: 300px; 
+        margin-bottom: 10px; 
         height: auto;
-        border: none;
-        
+        border-radius: 15px;
+    }
 
+    @media screen and (max-width: 768px) {
+        .video-tips {
+            width: 350px; 
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .video-tips {
+            width: 90% 
+        }
     }
 }
 .button-instagram-main{
