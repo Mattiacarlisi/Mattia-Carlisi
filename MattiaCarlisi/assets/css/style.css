@@ -7,8 +7,10 @@ body {
 
 main {
   background-color: #B7CECE;
+  margin-top: -20px;
 }
 
+/* this is a header*/
 header {
   background-color: #6E7E85;
   height: 80px;
@@ -57,6 +59,40 @@ header .button-contact-script {
   font-size: 20px;
 }
 
+/*this is main*/
+.title-contenuti-gratuiti {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.video-container .video-tips {
+  margin-top: 80px;
+  width: 300px;
+  height: auto;
+  border: none;
+}
+
+.button-instagram-main {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  background-color: transparent;
+  border: none;
+  width: 8.5vw; /* larghezza in percentuale della larghezza della finestra */
+  height: auto;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* this is a footer*/
 .footer-style {
   background-color: #6E7E85;
 }
@@ -122,34 +158,4 @@ hr {
 }
 .button-link .button-github {
   width: 40px;
-}
-
-.title-contenuti-gratuiti {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-.video-container {
-  display: flex;
-  justify-content: space-around; /* per spaziare uniformemente i video */
-  align-items: center; /* per allineare verticalmente i video al centro */
-}
-.video-container .video-tips {
-  margin-top: 80px;
-  width: 300px;
-  height: auto;
-  border: none;
-}
-
-.button-instagram-main {
-  position: absolute;
-  top: 100px;
-  right: 5%;
-  background-color: transparent;
-  border: none;
-  width: 8vw; /* larghezza in percentuale della larghezza della finestra */
-  height: auto;
-  background-size: cover;
-  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
