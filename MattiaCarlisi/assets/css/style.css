@@ -118,4 +118,11 @@ hr {
 }
 .button-link .button-github {
   width: 40px;
+}
+
+.video-tips {
+  margin-top: 80px;
+  width: 300px;
+  height: auto;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
