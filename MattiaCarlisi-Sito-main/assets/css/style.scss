@@ -1,0 +1,158 @@
+$first-color: #B7CECE;
+$second-color:#6E7E85;
+$third-color:#BBBAC6;
+$font-1: Arial, Helvetica, sans-serif;
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header{
+    background-color:$second-color;
+    height: 80px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top:0;
+    width:100%;
+    font-family: $font-1;
+    
+    
+    .menu{
+        display:flex;
+        gap: 20px;
+        list-style: none;
+        padding:0px;
+        margin-right: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+
+    .name{
+        margin-right:auto;
+        font-size: 20px;
+    }
+    .logo{
+        width: 150px;
+    }
+
+    
+
+    .button-contact{
+        color:white;
+        background-color: #BAD7F2;
+        width: 100px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        margin-right:50px;
+       
+    }
+
+        .button-contact:hover {
+            background: #86c3fc;
+        }
+    
+        .button-contact-script{
+            color:white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+}
+
+.footer-style{
+    background-color: $second-color;
+}
+.site-footer{
+    background-color: $second-color;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 200px;
+    width: 100%;
+    font-family: $font-1;
+
+    
+
+    .footer-logo{
+        width: 250px;
+        margin-left: 0px;
+    }
+
+    .footer-name{
+        color: white;
+        font-size: 20px;
+        
+    }
+    .footer-list{
+        font-size: 20px;
+        
+        .footer-list-one{
+            color: white;
+            list-style: none;
+            
+        }
+    }
+
+}
+
+hr{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 1px;
+    background-color: white;
+
+    
+    
+}
+
+
+
+.button-link{
+    background-color: $second-color;
+    height: 120px;
+    margin-top: 0px;
+    
+   
+    .container-link{
+        
+        list-style: none;
+        gap:30px;
+        display:flex;
+        justify-content: center;
+        
+    }
+    .button-socialmedia{
+        background-color: $second-color;
+        border:none;
+    }
+
+    .button-instagram{
+        width: 40px;
+       
+    }
+    .button-facebook{
+        width: 40px;
+       
+    }
+
+    .button-linkedin{
+        width: 40px;
+    }
+
+    .button-tiktok{
+        width: 40px;
+    }
+
+    .button-github{
+        width: 40px;
+    }
+}
