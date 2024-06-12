@@ -1,0 +1,42 @@
+/*this is main*/
+.title-contenuti-gratuiti {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.video-container .video-tips {
+  width: 300px;
+  margin-bottom: 10px;
+  height: auto;
+  border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  .video-container .video-tips {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .video-container .video-tips {
+    width: 90%;
+  }
+}
+
+.button-instagram-main {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  background-color: transparent;
+  border: none;
+  width: 8.5vw; /* larghezza in percentuale della larghezza della finestra */
+  height: auto;
+  background-size: cover;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

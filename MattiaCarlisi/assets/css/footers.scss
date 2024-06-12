@@ -1,0 +1,92 @@
+
+/* this is a footer*/
+
+.footer-style{
+    background-color: $second-color;
+}
+.site-footer{
+    background-color: $second-color;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 200px;
+    width: 100%;
+    font-family: $font-1;
+
+    
+
+    .footer-logo{
+        width: 250px;
+        margin-left: 0px;
+    }
+
+    .footer-name{
+        color: black;
+        font-size: 20px;
+        
+    }
+    .footer-list{
+        font-size: 20px;
+        
+        .footer-list-one{
+            color: black;
+            list-style: none;
+            
+        }
+    }
+
+}
+
+hr{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 1px;
+    background-color: white;
+
+    
+    
+}
+
+
+
+.button-link{
+    background-color: $second-color;
+    height: 120px;
+    margin-top: 0px;
+    
+   
+    .container-link{
+        
+        list-style: none;
+        gap:30px;
+        display:flex;
+        justify-content: center;
+        
+    }
+    .button-socialmedia{
+        background-color: $second-color;
+        border:none;
+    }
+
+    .button-instagram{
+        width: 40px;
+       
+    }
+    .button-facebook{
+        width: 40px;
+       
+    }
+
+    .button-linkedin{
+        width: 40px;
+    }
+
+    .button-tiktok{
+        width: 40px;
+    }
+
+    .button-github{
+        width: 40px;
+    }
+}
+
