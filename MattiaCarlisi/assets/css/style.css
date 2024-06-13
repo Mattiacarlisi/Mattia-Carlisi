@@ -154,14 +154,6 @@ header .dropdown_menu li .button-dropdown-contact-script {
 }
 
 /*this is main*/
-.title-contenuti-gratuiti {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-
 .video-container {
   display: flex;
   flex-wrap: wrap;
@@ -173,29 +165,73 @@ header .dropdown_menu li .button-dropdown-contact-script {
   height: auto;
   border-radius: 15px;
 }
+
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+}
+.main-title li {
+  display: flex;
+  align-items: center;
+}
+.main-title .button-connect-instagram {
+  position: absolute;
+  right: 20px;
+  display: flex; /* Assicura che l'ancora si comporti come un contenitore flessibile */
+  align-items: center; /* Allinea l'immagine verticalmente al centro */
+  margin-top: 100px;
+}
+.main-title .button-connect-instagram .button-instagram-main {
+  height: 15vh; /* L'immagine occupa il 50% dell'altezza della finestra del browser */
+  width: auto;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.main-title .title-contenuti-gratuiti {
+  margin-top: 100px;
+  height: 100px;
+  font-size: 50px;
+  display: flex; /* Assicura che l'ancora si comporti come un contenitore flessibile */
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
-  .video-container .video-tips {
+  .video-tips {
     width: 350px;
+  }
+  .video-tips.tre {
+    display: none;
+  }
+  .main-title .button-connect-instagram .button-instagram-main {
+    height: 12vh; /* L'immagine occupa il 50% dell'altezza della finestra del browser */
+    width: auto;
+  }
+  .main-title .title-contenuti-gratuiti {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 480px) {
-  .video-container .video-tips {
+  .video-tips {
     width: 90%;
   }
+  .video-tips.due, .video-tips.tre {
+    display: none;
+  }
+  .main-title .title-contenuti-gratuiti {
+    font-size: 24px;
+  }
+  .main-title .button-connect-instagram .button-instagram-main {
+    height: 7vh; /* L'immagine occupa il 50% dell'altezza della finestra del browser */
+    width: auto;
+  }
 }
-
-.button-instagram-main {
-  position: absolute;
-  top: 100px;
-  right: 5%;
-  background-color: transparent;
-  border: none;
-  width: 8.5vw; /* larghezza in percentuale della larghezza della finestra */
-  height: auto;
-  background-size: cover;
-  cursor: pointer;
-}
-
 /* this is a footer*/
 .footer-style {
   background-color: #6E7E85;
