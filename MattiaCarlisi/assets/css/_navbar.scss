@@ -12,7 +12,6 @@ header {
         position: fixed;
         top: 0;
         width: 100%;
-        max-width: 100%;
         font-family: $font-1;
         z-index: 100;
 
@@ -107,10 +106,12 @@ header {
         position:relative;
         top: 80px;
         height: 220px;
+        width: 100%;
         color: white;
         font-family: $font-1;
         cursor: pointer;
         list-style: none;
+        
         
         
 
@@ -175,9 +176,9 @@ header {
     .navbar {
         flex-direction: column; 
         flex-wrap: wrap;
-        align-content: space-around;
-        
-        
+        align-content: center;
+        align-items: center;
+        max-width: 100%;
         .links {
             display: none !important;
         }
@@ -187,13 +188,25 @@ header {
         .toggle_btn {
             display: none;
         }
-        .logo{
-            margin-top: -35px;
+        .logo {
+            width: 100px !important;
+            
+            
+            
+        }
+        .name{
+            display: none;
         }
          
     }
+
+    
       
         }
+
+    ul{ 
+        padding-left: 0;
+    }
 
     .dropdown_menu {
         display: flex;
@@ -204,10 +217,14 @@ header {
         position:relative;
         top: 80px;
         height: 220px;
+        width: 100%;
         color: white;
         font-family: $font-1;
         cursor: pointer;
         list-style: none;
+        
+        
+        
         
         
 
@@ -218,6 +235,7 @@ header {
             list-style: none;
             border-radius: 20px;
             padding: 8px;
+            
             
 
             &:hover {

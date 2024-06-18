@@ -10,7 +10,7 @@
     justify-content: space-around;
 
     .video-tips {
-        width: 300px; 
+        width: 200px; 
         margin-bottom: 10px; 
         height: auto;
         border-radius: 15px;
@@ -19,6 +19,13 @@
 
     
 }
+
+.lorem {
+    
+    width: 100%;
+   
+}
+
 
 .main-title{
 
@@ -29,6 +36,8 @@
     padding: 20px; // Aggiungi del padding per dare un po' di spazio intorno agli elementi
     margin: 0; // Rimuove il margine predefinito
     position: relative;
+    
+   
     
 
     li{
@@ -61,13 +70,16 @@
         
        
     }
+    
 }
+
+
 
 
 @media screen and (max-width: 768px) {
     main{
         
-        margin-top: 80px;
+        margin-top: 50px;
     }
     
 
@@ -82,12 +94,12 @@
 
     .main-title {
         .button-connect-instagram .button-instagram-main {
-            height: 12vh; /* L'immagine occupa il 50% dell'altezza della finestra del browser */
-            width: auto;  // Imposta l'altezza dell'immagine
+            height: 12vh; 
+            width: auto;  
         }
     }
 
-    .main-title .title-contenuti-gratuiti {
+    ul.main-title .title-contenuti-gratuiti {
         font-size: 30px; 
     }
 }
@@ -101,19 +113,27 @@
             display: none;  // Nasconde il video video-tips-1 e video-tips-3
         }
         
-    } 
+    }
+    .main-title{
+        padding:0;
+        width: auto;
+    }
 
        
     
 
     .main-title .title-contenuti-gratuiti {
-        font-size: 24px; 
+        font-size: 20px; 
+        height: auto;
+        width: auto;
     }
     .main-title {
         .button-connect-instagram .button-instagram-main {
-            height: 7vh; /* L'immagine occupa il 50% dell'altezza della finestra del browser */
-            width: auto;  // Imposta l'altezza dell'immagine
+            display:none;
+            
         }
     }
+
+    
 }
 
