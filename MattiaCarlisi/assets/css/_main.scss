@@ -1,4 +1,86 @@
-/*this is main*/
+/*maain intro */
+
+section{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:100px;
+        font-family: $font-1;
+    figure{
+        
+        .profile-photo{
+            width: 150px;
+            border-radius: 10%;
+        }
+    }
+
+    .profile-intro {
+        
+
+        .hello-intro{
+            
+            font-size: 25px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: animate 3s ease-in infinite ;
+        }
+
+        .name-intro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 40px;
+            
+        }
+        .passion-intro{
+            font-size: 25px;
+        }
+        .characteristics-intro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
+        }
+    }
+
+    .profile-actions{
+        .btn-contact{
+            color: white;
+            background-color: #44a083;
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease;
+            margin-right: 30px;
+            font-size:30px;
+
+            &:hover {
+                background: #86c3fc;
+            }
+
+            &:active {
+                transform: scale(1.5);
+            }
+
+            .button-contact-script {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}
+
+/*about me*/
+
+
+
+/*this is main contenuti gratuiti */
 
 .video-container {
     display: flex;
@@ -80,10 +162,7 @@
 
 @media screen and (max-width: 768px) {
     main{
-        
-        margin-top: 50px;
-
-       
+        margin-top: -20px;
     }
     
     
@@ -116,6 +195,24 @@
 }
 
 @media screen and (max-width: 480px) {
+    /*maain intro @media */
+    
+    main {
+        section {
+            .profile-intro {
+                .hello-intro,
+                .name-intro,
+                .passion-intro,
+                .characteristics-intro,
+                .btn-contact{
+                    font-size: 95%; 
+                    }
+                }
+
+        }
+    }
+    /*maain free tips*/
+
     .video-tips {
         width: 90%;
 
@@ -154,3 +251,13 @@
     
 }
 
+/*maain intro @framases */
+@keyframes animate
+{
+    0%{
+        width: 0;
+    }
+    70%{
+        width: 100%;
+    }
+}
