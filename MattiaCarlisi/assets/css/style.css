@@ -258,14 +258,13 @@ section .profile-intro .characteristics-intro {
 section .profile-actions .btn-contact {
   color: white;
   background-color: #44a083;
-  width: 200px;
-  height: 50px;
   border-radius: 50px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-right: 30px;
   font-size: 30px;
+  text-decoration: none;
+  padding: 8px 20px;
 }
 section .profile-actions .btn-contact:hover {
   background: #86c3fc;
@@ -273,13 +272,52 @@ section .profile-actions .btn-contact:hover {
 section .profile-actions .btn-contact:active {
   transform: scale(1.5);
 }
-section .profile-actions .btn-contact .button-contact-script {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
 
 /*about me*/
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.about-section figure {
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.about-section figure .photo-about-me {
+  width: auto;
+  height: 400px;
+  border-radius: 10%;
+}
+.about-section .about-me {
+  display: flex;
+  flex-direction: column;
+}
+.about-section .about-me h2 {
+  margin-top: 0;
+}
+.about-section .about-me .btn-contact-1 {
+  color: white;
+  background-color: #44a083;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 30px;
+  text-decoration: none;
+  width: 200px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.about-section .about-me .btn-contact-1:hover {
+  background: #86c3fc;
+}
+.about-section .about-me .btn-contact-1:active {
+  transform: scale(1.5);
+}
+
 /*this is main contenuti gratuiti */
 .video-container {
   display: flex;
@@ -536,5 +574,70 @@ hr {
   }
   .button-link .container-link .button-github {
     width: 30px;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #B7CECE;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px 40px 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+.container h1 {
+  text-align: center;
+  color: #333;
+}
+.container .form-group {
+  margin-bottom: 20px;
+}
+.container .form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.container .form-group input[type=text],
+.container .form-group input[type=email],
+.container .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container .form-group input[type=text]:focus,
+.container .form-group input[type=email]:focus,
+.container .form-group textarea:focus {
+  border-color: blue;
+  outline: none;
+}
+.container .form-group textarea {
+  resize: vertical;
+}
+.container .btn-submit {
+  color: white;
+  background-color: #44a083;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 30px;
+}
+.container .btn-submit:hover {
+  background-color: dark;
+}
+@media screen and (max-width: 600px) {
+  .container .btn-submit {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
