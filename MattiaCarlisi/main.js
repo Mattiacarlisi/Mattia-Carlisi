@@ -1,6 +1,6 @@
 /*parole dinamiche*/
 
-var words = ['Personal Trainer', 'Wellness', 'Start-Up', 'Chinesiologia', 'Finance','Software development'];
+var words = ['Esercizio Terapia', 'Rieducazione Motoria', 'Personal Trainer', 'Ginnastica posturale'];
 var counter = 0;
 var word = document.getElementById("characteristics");
 setInterval(update_characteristics, 1000);

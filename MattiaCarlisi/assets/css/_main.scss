@@ -1,3 +1,4 @@
+
 /*maain intro */
 
 section{
@@ -10,7 +11,7 @@ section{
     figure{
         
         .profile-photo{
-            width: 150px;
+            width: 200px;
             border-radius: 10%;
         }
     }
@@ -20,7 +21,7 @@ section{
 
         .hello-intro{
             
-            font-size: 25px;
+            font-size: 19px;
             overflow: hidden;
             white-space: nowrap;
             animation: animate 3s ease-in infinite ;
@@ -30,17 +31,17 @@ section{
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 40px;
+            font-size: 33px;
             
         }
         .passion-intro{
-            font-size: 25px;
+            font-size: 19px;
         }
         .characteristics-intro{
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 30px;
+            font-size: 25px;
         }
     }
 
@@ -128,182 +129,141 @@ section{
 
 }
 
+/*this is main studio */
 
-
-
-
-
-
-/*this is main contenuti gratuiti */
-
-.video-container {
+.studio {
     display: flex;
-    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+  
+    .photo-container {
+      order: 2;
+      width: 300px;
+      
+  
+      .photo-about-studio {
+        width: auto;
+        height: 400px;
+        border-radius: 10%;
+      }
+    }
+  
+    .studio-me {
+      order: 1; 
+      max-width: 60%; 
+      margin-left: 20px;
+      
+      
+      
+
+      h2 {
+        margin-top: 0;
+       
+      }
+  
+      p {
+        text-align: justify;
+        
+      }
+  
+      .btn-contact-2{
+        color: white;
+        background-color: #44a083;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        font-size:30px;
+        text-decoration: none;
+        width: 200px;
+        padding:8px 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 30%;
+        
+        
+
+        &:hover {
+            background: #86c3fc;
+        }
+
+        &:active {
+            transform: scale(1.5);
+        }
+      }
+    }
+}
+
+
+/* main cards*/
+h2{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.card-container{
+    display: flex;
     justify-content: space-around;
-
-    .video-tips {
-        width: 200px; 
-        margin-bottom: 10px; 
-        height: auto;
-        border-radius: 15px;
-       
-    }
-
-    
-}
-
-.lorem {
-    
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    
-   
-}
-
-
-.main-title{
-
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    list-style: none; 
-    padding: 20px; 
-    margin: 0; 
-    position: relative;
-    
-   
-    
-
-    li{
-        display: flex; 
-        align-items: center;
-        height: 100px; 
-        margin-top: 100px;
+    margin: 30px 200px 30px 200px;
+    .card{
         
-    
-    }
-    .button-connect-instagram {
-        position: absolute; 
-        right: 20px;
-        display: flex; 
-        align-items: center; 
-        margin-top: 100px;
-    
-        .button-instagram-main{
-            height: 15vh; /* L'immagine occupa il 50% dell'altezza della finestra del browser */
-            width: auto;  // Imposta l'altezza dell'immagine
-            background-color: transparent;
-            background-size: cover;
-            border: none;
-            cursor: pointer;
-        }
-    }
-    .title-contenuti-gratuiti{
+        .card-content{
+            background-color:#c3f2e3;
+            border: 2px solid black;
+            width:300px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+
+            .img-cards {
+                height: auto;
+                width: 150px;
+                margin-top:20px;
+                
+            }
+            p{
+                
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                margin-left: 20px;
+
+            }
+            .btn-contact-3{
+                color: white;
+                background-color: #44a083;
+                border-radius: 50px;
+                border: none;
+                cursor: pointer;
+                transition: all .3s ease;
+                font-size:25px;
+                text-decoration: none;
+                width: 150px;
+                padding:8px 20px;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                
+                
+                
         
-        height: 100px;
-        font-size: 50px;
-        display: flex; /* Assicura che l'ancora si comporti come un contenitore flessibile */
-        align-items: center; 
-        
-       
-    }
-    
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-    main{
-        margin-top: -20px;
-    }
-    
-    
-        
-
-    .video-tips {
-        width: 350px; 
-        
-        &.tre{
-            display: none;  // Nasconde il video video-tips-1 e video-tips-3
-        }
-        
-    }
-
-    .main-title {
-        .button-connect-instagram .button-instagram-main {
-            height: 12vh; 
-            width: auto;  
-        }
-        li{
-            margin-top: 0;
-        }
-    }
-
-    ul.main-title .title-contenuti-gratuiti {
-        font-size: 30px; 
-    }
-
-    
-}
-
-@media screen and (max-width: 480px) {
-    /*maain intro @media */
-    
-    main {
-        section {
-            .profile-intro {
-                .hello-intro,
-                .name-intro,
-                .passion-intro,
-                .characteristics-intro,
-                .btn-contact{
-                    font-size: 95%; 
-                    }
+                &:hover {
+                    background: #86c3fc;
                 }
-
-        }
-    }
-    /*maain free tips*/
-
-    .video-tips {
-        width: 90%;
-
-        &.due,
-        &.tre{
-            display: none;  // Nasconde il video video-tips-1 e video-tips-3
-        }
         
-    }
-    .main-title{
-        padding:0;
-        width: auto;
-
-        li{
-            margin-top: 0;
+                &:active {
+                    transform: scale(1.5);
+                }
+              }
         }
     }
-
-       
-    
-
-    .main-title .title-contenuti-gratuiti {
-        font-size: 20px; 
-        height: auto;
-        width: auto;
-    }
-    .main-title {
-        .button-connect-instagram .button-instagram-main {
-            display:none;
-            
-        }
-    }
-
-    
-
-    
 }
+
+
+
 
 /*maain intro @framases */
 @keyframes animate

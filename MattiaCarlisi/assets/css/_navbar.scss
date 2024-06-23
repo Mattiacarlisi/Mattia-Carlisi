@@ -27,6 +27,11 @@ header {
             li:hover {
                 color: blue;
             }
+
+            .links1{
+                text-decoration: none;
+                color: white;
+            }
         }
 
         .name {
@@ -113,7 +118,9 @@ header {
         list-style: none;
         
         
-        
+        ul{
+            list-style: none;
+        }
 
         .links_dropdown{
             display: flex;
@@ -122,6 +129,8 @@ header {
             list-style: none;
             border-radius: 20px;
             padding: 8px;
+            text-decoration: none;
+            color: white;
             
 
             &:hover {
