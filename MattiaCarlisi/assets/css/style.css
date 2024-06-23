@@ -264,7 +264,8 @@ section .profile-intro .characteristics-intro {
   align-items: center;
   font-size: 25px;
 }
-section .profile-actions .btn-contact {
+
+.profile-actions .btn-contact {
   color: white;
   background-color: #44a083;
   border-radius: 50px;
@@ -275,10 +276,10 @@ section .profile-actions .btn-contact {
   text-decoration: none;
   padding: 8px 20px;
 }
-section .profile-actions .btn-contact:hover {
+.profile-actions .btn-contact:hover {
   background: #86c3fc;
 }
-section .profile-actions .btn-contact:active {
+.profile-actions .btn-contact:active {
   transform: scale(1.5);
 }
 
@@ -304,6 +305,9 @@ section .profile-actions .btn-contact:active {
 }
 .about-section .about-me h2 {
   margin-top: 0;
+}
+.about-section .about-me p {
+  text-align: justify; /* Centrato */
 }
 .about-section .about-me .btn-contact-1 {
   color: white;
@@ -397,6 +401,10 @@ h2 {
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-container .card .card-content h3 {
+  font-size: 25px;
 }
 .card-container .card .card-content .img-cards {
   height: auto;
@@ -404,6 +412,7 @@ h2 {
   margin-top: 20px;
 }
 .card-container .card .card-content p {
+  font-size: 18px;
   display: flex;
   align-items: center;
   margin-right: 20px;
@@ -438,6 +447,209 @@ h2 {
   }
   70% {
     width: 100%;
+  }
+}
+/*maain intro */
+@media (max-width: 620px) {
+  .profile-intro .hello-intro {
+    font-size: 15px !important;
+  }
+  .profile-intro .name-intro {
+    font-size: 30px !important;
+  }
+  .profile-intro .passion-intro {
+    font-size: 14px !important;
+  }
+  .profile-intro .characteristics-intro {
+    font-size: 22px;
+  }
+}
+/*main about me  */
+@media (max-width: 620px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-section figure {
+    order: 2;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .about-section figure .photo-about-me {
+    height: 300px;
+  }
+  .about-section .about-me {
+    order: 1;
+    text-align: center;
+  }
+  .about-section .about-me p {
+    text-align: justify; /* Testo giustificato */
+    margin-left: 0; /* Rimuovi il margine a sinistra */
+    margin-right: 0; /* Rimuovi il margine a destra */
+    padding: 0 20px; /* Aggiungi padding per evitare che il testo tocchi i bordi */
+    width: 240px;
+  }
+  .about-section .about-me .btn-contact-1 {
+    margin-top: 20px !important;
+    margin: 0 auto; /* Aggiunto per centrare il bottone */
+  }
+}
+/*main studio  */
+@media (max-width: 620px) {
+  .studio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+  .studio .photo-container {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 0;
+  }
+  .studio .photo-container .photo-about-studio {
+    height: 300px;
+  }
+  .studio .studio-me .btn-contact-2 {
+    margin: 0px;
+  }
+}
+/*maain cards  */
+@media (max-width: 1500px) {
+  .card-container {
+    margin: 30px 100px 30px 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .card-container {
+    margin: 30px 10px 30px 10px;
+  }
+  .card-container .card .card-content {
+    width: 250px;
+    height: 350px;
+  }
+  .card-container .card .img-cards {
+    width: 100px !important;
+    height: auto;
+    margin-top: 20px;
+  }
+  .card-container .card h3 {
+    font-size: 22px !important;
+  }
+  .card-container .card p {
+    font-size: 18px !important;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .card-container .card .btn-contact-3 {
+    width: 120px !important;
+    font-size: 25x !important;
+    margin-top: 30px !important;
+  }
+}
+@media (max-width: 992px) {
+  .card-container {
+    margin: 30px 10px 30px 10px;
+  }
+  .card-container .card .card-content {
+    width: 170px;
+    height: 300px;
+  }
+  .card-container .card .img-cards {
+    width: 70px !important;
+    height: auto;
+    margin-top: 10px;
+  }
+  .card-container .card h3 {
+    font-size: 18px !important;
+  }
+  .card-container .card p {
+    font-size: 14px !important;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .card-container .card .btn-contact-3 {
+    width: 75px !important;
+    font-size: 20px !important;
+    margin-top: 30px !important;
+  }
+}
+@media (max-width: 580px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .card-container .card .card-content {
+    width: 250px;
+    height: 400px;
+  }
+  .card-container .card .img-cards {
+    height: auto;
+    width: 150px !important;
+    margin-top: 20px;
+  }
+  .card-container .card h3 {
+    font-size: 25px !important;
+  }
+  .card-container .card p {
+    font-size: 18px !important;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .card-container .card .btn-contact-3 {
+    width: 150px !important;
+    font-size: 25px !important;
+    margin-top: 30px !important;
+  }
+}
+/*recensioni  */
+.reviews-container {
+  width: 80%;
+  overflow: hidden;
+  background: #B7CECE;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.reviews-container .reviews {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-reviews 20s linear infinite;
+}
+.reviews-container .reviews .review {
+  display: inline-block;
+  padding: 0 30px;
+  text-align: center;
+  white-space: normal;
+}
+.reviews-container .reviews .review .stars {
+  color: gold;
+  font-size: 24px;
+  margin-top: 5px;
+}
+.reviews-container .reviews .review .reviewer {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@keyframes scroll-reviews {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 /* this is a footer*/
