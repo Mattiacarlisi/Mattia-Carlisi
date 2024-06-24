@@ -270,6 +270,52 @@ h2{
     }
 }
 
+/*recensioni  */
+
+
+
+.reviews-container {
+    width: 100%;
+    overflow: hidden;
+    background: #c3f2e3;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+
+    .reviews {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll-reviews 30s linear infinite;
+
+        .review {
+            display: inline-block;
+            padding: 0 30px;
+            text-align: center;
+            white-space: normal;
+
+            .stars {
+                color: gold;
+                font-size: 24px;
+                margin-top: 5px;
+            }
+
+            .reviewer {
+                margin-top: 10px;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@keyframes scroll-reviews {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 
 
@@ -495,48 +541,8 @@ h2{
     }
 }
 
-/*recensioni  */
 
 
 
-.reviews-container {
-    width: 80%;
-    overflow: hidden;
-    background: $first-color;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 
-    .reviews {
-        display: flex;
-        white-space: nowrap;
-        animation: scroll-reviews 20s linear infinite;
 
-        .review {
-            display: inline-block;
-            padding: 0 30px;
-            text-align: center;
-            white-space: normal;
-
-            .stars {
-                color: gold;
-                font-size: 24px;
-                margin-top: 5px;
-            }
-
-            .reviewer {
-                margin-top: 10px;
-                font-style: italic;
-            }
-        }
-    }
-}
-
-@keyframes scroll-reviews {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
