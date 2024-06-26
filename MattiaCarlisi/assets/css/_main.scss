@@ -1,43 +1,42 @@
 
 /*maain intro */
 
-section{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top:100px;
-        font-family: $font-1;
-    figure{
-        
-        .profile-photo{
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: $font-1;
+
+    figure {
+        .profile-photo {
             width: 200px;
             border-radius: 10%;
         }
     }
 
     .profile-intro {
-        
-
-        .hello-intro{
-            
+        .hello-intro {
             font-size: 19px;
             overflow: hidden;
             white-space: nowrap;
-            animation: animate 3s ease-in infinite ;
+            animation: animateHelloIntro 3s ease-in;
         }
 
-        .name-intro{
+        .name-intro {
             display: flex;
             flex-direction: column;
             align-items: center;
             font-size: 33px;
+        }
+
+        .passion-intro {
+            font-size: 19px; 
             
         }
-        .passion-intro{
-            font-size: 19px;
-        }
-        .characteristics-intro{
+
+        .characteristics-intro {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -320,7 +319,7 @@ h2{
 
 
 /*maain intro @framases */
-@keyframes animate
+@keyframes animateHelloIntro
 {
     0%{
         width: 0;

@@ -247,7 +247,7 @@ section .profile-intro .hello-intro {
   font-size: 19px;
   overflow: hidden;
   white-space: nowrap;
-  animation: animate 3s ease-in infinite;
+  animation: animateHelloIntro 3s ease-in;
 }
 section .profile-intro .name-intro {
   display: flex;
@@ -479,7 +479,7 @@ h2 {
   }
 }
 /*maain intro @framases */
-@keyframes animate {
+@keyframes animateHelloIntro {
   0% {
     width: 0;
   }

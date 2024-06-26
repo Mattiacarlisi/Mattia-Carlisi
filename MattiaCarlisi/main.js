@@ -1,32 +1,43 @@
 /*parole dinamiche*/
 
-var words = ['Esercizio Terapia', 'Rieducazione Motoria', 'Personal Trainer', 'Ginnastica posturale'];
-var counter = 0;
-var word = document.getElementById("characteristics");
-setInterval(update_characteristics, 1000);
+document.addEventListener("DOMContentLoaded", function() {
+    var words = ['Esercizio Terapia', 'Rieducazione Motoria', 'Personal Trainer', 'Ginnastica posturale'];
+    var counter = 0;
+    var word = document.getElementById("one");
 
-function update_characteristics() {
-    word.textContent = words[counter];
-    counter++;
-    if (counter >= words.length) {
-        counter = 0;
+    if (word) {
+        setInterval(update_one, 1000);
+    } else {
+        console.error("Element with id 'one' not found.");
     }
-}
 
+    function update_one() {
+        word.textContent = words[counter];
+        counter++;
+        if (counter >= words.length) {
+            counter = 0;
+        }
+    }
+});
 
 /*parole dinamiche del CV*/
 
-var words = ['finance', 'start-up', 'wellness', 'web Developer'];
-var counter = 0;
-var word = document.getElementById("cvprofile");
-setInterval(update_cvprofile, 1000);
+document.addEventListener("DOMContentLoaded", function() {
+    var words = ['finance', 'Start-up', 'wellness', 'web Developer'];
+    var counter = 0;
+    var word = document.getElementById("cvprofile");
 
-function update_characteristics() {
-    word.textContent = words[counter];
-    counter++;
-    if (counter >= words.length) {
-        counter = 0;
+    if (word) {
+        setInterval(update_cvprofile, 1000);
+    } else {
+        console.error("Element with id 'cvprofile' not found.");
     }
-}
 
-
+    function update_cvprofile() {
+        word.textContent = words[counter];
+        counter++;
+        if (counter >= words.length) {
+            counter = 0;
+        }
+    }
+});

@@ -1,11 +1,10 @@
-/*email.js*/
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     var params = {
         firstName: document.getElementById("firstName").value,
         lastName: document.getElementById("lastName").value,
-        email: document.getElementById("email").value, 
+        email: document.getElementById("email").value,
         message: document.getElementById("message").value
     }
 
@@ -13,18 +12,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const templateID = "template_ttja0xl";
 
     emailjs.send(serviceID, templateID, params)
-    .then(
-        res => {
-            document.getElementById("firstName").value = "";
-            document.getElementById("lastName").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert("Your message sent successfully");
-        }
-    )
+    .then(res => {
+        document.getElementById("firstName").value = "";
+        document.getElementById("lastName").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        document.getElementById("form-feedback").innerHTML = "<p style='color: green;'>Your message was sent successfully!</p>";
+    })
     .catch((err) => {
-        console.log(err);
-        alert("There was an error sending your message.");
+        console.error(err);
+        document.getElementById("form-feedback").innerHTML = "<p style='color: red;'>There was an error sending your message.</p>";
     });
 });

@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/MattiaCarlisi/assets/css/style.css">
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
     (function(){
         emailjs.init("-DDVi2ko2CwfN6Tqc");
-    })();
+    })(); 
     </script>
-    <script src="/MattiaCarlisi/forum.js"></script> 
-
+    <script src="/MattiaCarlisi/forum.js" defer></script> 
     <title>Dott. Mattia Carlisi</title>
 </head>
 <body>
@@ -25,10 +22,10 @@
             <p class="name">Dott. Mattia Carlisi</p>
             
             <ul class="links">
-                <li>Home</li>
-                <li>About me</li>
-                <li>Services</li>
-                <li>Link</li>
+                <li><a  class= "links1" href="index.html">Home</a></li>
+                <li><a  class= "links1" href="/MattiaCarlisi/CV.html">CV</a>
+                <li><a  class= "links1" href="#servizi">Services</a></li>
+                <li><a  class= "links1" href="#links">Link</a>
             </ul>
         
             <button class="button-contact" >
@@ -42,10 +39,10 @@
 
         <nav class="dropdown_menu">
             <ul>
-                <li class="links_dropdown">Home</li>
-                <li class="links_dropdown">About me</li>
-                <li class="links_dropdown">Services</li>
-                <li class="links_dropdown">Link</li>
+                <li><a  class= "links_dropdown" href="index.html">Home</a></li>
+                <li><a  class= "links_dropdown" href="/MattiaCarlisi/CV.html">CV</a>
+                <li><a  class= "links_dropdown" href="#servizi">Services</a></li>
+                <li><a  class= "links_dropdown" href="#links">Link</a>
                 <li class="links_dropdown"><button class="dropdown-button-contact" >
                         <a  class="button-dropdown-contact-script" href="/MattiaCarlisi/forum.html" target="_blank">
                         contact</a>
@@ -58,7 +55,7 @@
         <!--forum-->
         <div class="container">
             <h1>Contact Me</h1>
-            <form action="submit.php" method="POST">
+            <form id="contact-form">
                 <div class="form-group">
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName" required>
@@ -75,11 +72,10 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" onclick="sendMail()" class="btn-submit">Submit</button>
+                <button type="submit" class="btn-submit">Submit</button>
             </form>
-
+            <div id="form-feedback"></div> <!-- Aggiungi questo div per i feedback -->
         </div>
-    
 
     <!--footer-->
 
