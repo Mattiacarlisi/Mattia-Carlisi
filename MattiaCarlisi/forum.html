@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/MattiaCarlisi/assets/css/style.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("-DDVi2ko2CwfN6Tqc");
+    })();
+    </script>
+    <script src="/MattiaCarlisi/forum.js"></script> 
+
     <title>Dott. Mattia Carlisi</title>
 </head>
 <body>
@@ -65,7 +75,7 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn-submit">Submit</button>
+                <button type="submit" onclick="sendMail()" class="btn-submit">Submit</button>
             </form>
 
         </div>
@@ -73,83 +83,84 @@
 
     <!--footer-->
 
-<footer class="footer-style">
+    <footer id="links" class="footer-style">
 
-    <div class="site-footer">
-        <img class="footer-logo" src="/MattiaCarlisi/assets/img/logo-no-sfondo.png" alt="logo">
+        <div class="site-footer">
+            <img class="footer-logo" src="/MattiaCarlisi/assets/img/logo-no-sfondo.png" alt="logo">
 
-        <div class="footer-name">Dott. Mattia Carlisi</div>
+            <div class="footer-name">Dott. Mattia Carlisi</div>
 
-        <div class="footer-list">
-            <ul>
-                <li class="footer-list-one">Home</li>
-            </ul>
+            <div class="footer-list">
+                <ul>
+                    <li><a  class= "links1" href="index.html">Home</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li><a  class= "links1" href="/MattiaCarlisi/CV.html">CV</a>
+                </ul>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li><a  class= "links1" href="#servizi">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li><a  class= "links1" href="#links">Link</a>
+                </ul>
+            </div>
         </div>
-
-        <div class="footer-list">
-            <ul>
-                <li class="footer-list-one">About me</li>
-            </ul>
-        </div>
-
-        <div class="footer-list">
-            <ul>
-                <li class="footer-list-one">Services</li>
-            </ul>
-        </div>
-
-        <div class="footer-list">
-            <ul>
-                <li class="footer-list-one">Link</li>
-            </ul>
-        </div>
-    </div>
-
-    <hr>
-    <div class="button-link">
-        <ul class="container-link">
-
-            <li><button class="button-socialmedia" >
-                <a  class="button-connect-instagram" href="https://serramentiportecarlisiivrea.it/" target="_blank">
-                    <img class="button-instagram" src="/MattiaCarlisi/assets/img/instagram.png" alt="">
-                </a>
-                </button>
-            </li>
-            <li>
-                <button class="button-socialmedia" >
-                <a  class="button-connect-facebook" href="https://serramentiportecarlisiivrea.it/" target="_blank">
-                    <img class="button-facebook" src="/MattiaCarlisi/assets/img/facebook.png" alt="">
-                </a>
-                </button>
-            </li>
-
-            <li>
-                <button class="button-socialmedia" >
-                <a  class="button-connect-linkedin" href="https://serramentiportecarlisiivrea.it/" target="_blank">
-                    <img class="button-linkedin" src="/MattiaCarlisi/assets/img/linkedin.png" alt="">
-                </a>
-                </button>
-            </li>
-
-            <li>
-                <button class="button-socialmedia" >
-                <a  class="button-connect-tiktok" href="https://serramentiportecarlisiivrea.it/" target="_blank">
-                    <img class="button-tiktok" src="/MattiaCarlisi/assets/img/tik-tok.png" alt="">
-                </a>
-                </button>
-            </li>
-
-            <li>
-                <button class="button-socialmedia" >
-                <a  class="button-connect-github" href="https://serramentiportecarlisiivrea.it/" target="_blank">
-                    <img class="button-github" src="/MattiaCarlisi/assets/img/github.png" alt="">
-                </a>
-                </button>
-            </li>
-        </ul>
-    </div>
     
-</footer>
+        <hr>
+        <div class="button-link">
+            <ul class="container-link">
+
+                <li><button class="button-socialmedia" >
+                    <a  class="button-connect-instagram" href="https://www.instagram.com/mattiacarlisi.pt/" target="_blank">
+                        <img class="button-instagram" src="/MattiaCarlisi/assets/img/instagram.png" alt="">
+                    </a>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-socialmedia" >
+                    <a  class="button-connect-facebook" href="https://it-it.facebook.com/mattia.carlisi/" target="_blank">
+                        <img class="button-facebook" src="/MattiaCarlisi/assets/img/facebook.png" alt="">
+                    </a>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="button-socialmedia" >
+                    <a  class="button-connect-linkedin" href="https://it.linkedin.com/in/mattia-carlisi-095036239?trk=public_post_comment_actor-image" target="_blank">
+                        <img class="button-linkedin" src="/MattiaCarlisi/assets/img/linkedin.png" alt="">
+                    </a>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="button-socialmedia" >
+                    <a  class="button-connect-tiktok" href="https://www.tiktok.com/@mattiacarlisi_pt" target="_blank">
+                        <img class="button-tiktok" src="/MattiaCarlisi/assets/img/tik-tok.png" alt="">
+                    </a>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="button-socialmedia" >
+                    <a  class="button-connect-github" href="https://github.com/Mattiacarlisi" target="_blank">
+                        <img class="button-github" src="/MattiaCarlisi/assets/img/github.png" alt="">
+                    </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
 
 </body>
+
 </html>

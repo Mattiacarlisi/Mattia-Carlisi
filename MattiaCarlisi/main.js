@@ -13,3 +13,20 @@ function update_characteristics() {
     }
 }
 
+
+/*parole dinamiche del CV*/
+
+var words = ['finance', 'start-up', 'wellness', 'web Developer'];
+var counter = 0;
+var word = document.getElementById("cvprofile");
+setInterval(update_cvprofile, 1000);
+
+function update_characteristics() {
+    word.textContent = words[counter];
+    counter++;
+    if (counter >= words.length) {
+        counter = 0;
+    }
+}
+
+

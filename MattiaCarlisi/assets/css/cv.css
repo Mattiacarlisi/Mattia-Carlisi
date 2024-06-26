@@ -1,1 +1,86 @@
-/*# sourceMappingURL=cv.css.map */
+.profile-cv figure .cv-foto {
+  width: auto;
+  height: 200px;
+  border-radius: 10%;
+}
+
+.level {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+.level .progress-bar {
+  background-color: #ddd;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.level .progress-bar .progress {
+  background-color: #06fcae;
+  height: 100%;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+.level .progress-label {
+  margin-top: 5px;
+  font-size: 100px;
+  font-weight: bold;
+  color: dark;
+}
+
+.education-section {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education-section .title {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.education-section .education-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.education-section .education-item .description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 90%;
+}
+.education-section .education-item .education-year {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  align-self: center;
+}
+.education-section .education-item .education-line {
+  width: 2px;
+  height: 100%;
+  margin: 0 10px;
+}
+.education-section .education-item .education-details {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.education-section .education-item .education-details .education-title {
+  margin-bottom: 5px;
+}
+.education-section .education-item .education-details .education-thesis {
+  font-style: italic;
+  color: #666;
+}
+.education-section .education-item .education-details .relatore-thesis {
+  font-weight: bold;
+  font-style: italic;
+}/*# sourceMappingURL=cv.css.map */

@@ -3,49 +3,57 @@
 .footer-style{
     background-color: $second-color;
 }
-.site-footer{
+.site-footer {
     background-color: $second-color;
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     height: 200px;
     width: 100%;
     font-family: $font-1;
     cursor: pointer;
 
-    
-
-    .footer-logo{
+    .footer-logo {
         width: 250px;
         margin-left: 0px;
     }
 
-    .footer-name{
+    .footer-name {
         color: white;
         font-size: 20px;
 
-        &:hover{
+        &:hover {
             color: yellow;
         }
-        
-        
-        
     }
-    .footer-list{
+
+    .footer-list {
         font-size: 20px;
         
-        .footer-list-one{
-            color: white;
-            list-style: none;
 
-            &:hover{
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        a {
+            color: white; 
+            text-decoration: none;
+            
+
+            &:hover {
                 color: yellow;
             }
-            
         }
     }
-
 }
+
 
 hr{
     
