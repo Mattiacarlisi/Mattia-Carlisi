@@ -8,6 +8,7 @@ section {
     justify-content: center;
     margin-top: 100px;
     font-family: $font-1;
+    
 
     figure {
         .profile-photo {
@@ -78,7 +79,8 @@ section {
 .about-section{
     display: flex;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 100px;
+    
     figure {
         margin: 0;
         margin-right: 20px;
@@ -95,11 +97,17 @@ section {
         display: flex;
         flex-direction: column;
         
+        align-items: center;
+        width: 70%;
+        
         h2 {
             margin-top: 0;
+            font-size: 45px;
         }
         p {
-            text-align: justify; /* Centrato */
+            text-align: justify; 
+            font-size: 25px;
+            
         }
 
         .btn-contact-1{
@@ -115,10 +123,7 @@ section {
             padding:8px 20px;
             display: flex;
             justify-content: center;
-            margin-top: 100px;
-            
-            
-
+      
             &:hover {
                 background: #86c3fc;
             }
@@ -137,38 +142,39 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 50px;
+    
   
     .photo-container {
       order: 2;
-      width: 300px;
+      width: 500px;
       
   
       .photo-about-studio {
         width: auto;
-        height: 400px;
+        height: 500px;
         border-radius: 10%;
       }
     }
   
     .studio-me {
       order: 1; 
-      max-width: 60%; 
+      max-width: 70%; 
       margin-left: 20px;
-      
-      
-      
 
-      h2 {
+        h2 {
         margin-top: 0;
+        font-size: 45px;
        
       }
   
-      p {
+        p {
         text-align: justify;
+        font-size: 25px;
         
       }
   
-      .btn-contact-2{
+        .btn-contact-2{
         color: white;
         background-color: #44a083;
         border-radius: 50px;
@@ -208,6 +214,7 @@ h2{
     display: flex;
     justify-content: space-around;
     margin: 30px 200px 30px 200px;
+    
     .card{
         
         .card-content{
@@ -277,7 +284,7 @@ h2{
     width: 100%;
     overflow: hidden;
     background: #c3f2e3;
-    padding: 20px;
+    padding: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     
@@ -285,13 +292,20 @@ h2{
     .reviews {
         display: flex;
         white-space: nowrap;
-        animation: scroll-reviews 30s linear infinite;
+        animation: scroll-reviews 60s linear infinite;
 
         .review {
             display: inline-block;
             padding: 0 30px;
             text-align: center;
             white-space: normal;
+            .reviews-container {
+                width: 100%;
+                overflow: hidden;
+                background: #c3f2e3;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
 
             .stars {
                 color: gold;
@@ -306,6 +320,8 @@ h2{
         }
     }
 }
+}
+
 
 @keyframes scroll-reviews {
     0% {
@@ -333,16 +349,33 @@ h2{
 @media (max-width: 620px) {
     .profile-intro{
         .hello-intro{
-            font-size: 15px !important;
+            font-size: 10px !important;
         }
         .name-intro{
-            font-size: 30px !important;
+            font-size: 20px !important;
         }
         .passion-intro{
-            font-size: 14px !important;
+            font-size: 10px !important;
         }
         .characteristics-intro{
-            font-size: 22px;
+            font-size: 12px !important;
+        }
+    }
+}
+.profile-actions{
+        
+    .btn-contact{
+        font-size:20px;
+    }
+}
+
+section {
+    
+
+    figure {
+        .profile-photo {
+            width: 150px;
+            border-radius: 10%;
         }
     }
 }
@@ -356,32 +389,57 @@ h2{
         justify-content: center;
         figure {
             order: 2;
-            margin: 20px 0; 
+            margin: 20px 0 0 0;
             text-align: center;
             .photo-about-me{
-                height: 300px;  
+                height: 250px;  
             }
           }
       
         .about-me {
             order: 1; 
             text-align: center;
+            
             p {
-                text-align: justify; /* Testo giustificato */
-                margin-left: 0; /* Rimuovi il margine a sinistra */
-                margin-right: 0; /* Rimuovi il margine a destra */
-                padding: 0 20px; /* Aggiungi padding per evitare che il testo tocchi i bordi */
-                width: 240px;
+                text-align: center; 
+                margin-left: 0; 
+                margin-right: 0; 
+                padding: 0;
+                font-size: 15px;
+                
+            }
+            h2{
+                font-size: 30px
             }
             
             .btn-contact-1 {
                 margin-top: 20px !important;
                 margin: 0 auto; 
+                font-size: 20px;
+                width: 120px;
+
             }
         }
     }
 }
 
+@media (max-width: 1000px) {
+    .about-section{
+       
+        figure {
+            
+            .photo-about-me{
+                height: 250px;  
+            }
+          }
+          .about-me {
+           
+            p {
+                width: 90%;
+            }
+          }
+    }
+}
 
 /*main studio  */
 @media (max-width: 620px) {
@@ -389,7 +447,8 @@ h2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-self: center;
+        justify-content: center;
+        text-align: center;
         
         .photo-container {
             margin-left: 0;
@@ -397,19 +456,50 @@ h2{
             text-align: center;
             margin-right:0;
             .photo-about-studio {
-                height: 300px;
+                height: 250px;
             }
         }
 
         .studio-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:0;
             
             .btn-contact-2 {
                 margin: 0px;
+                font-size: 20px;
+                width: 120px;
+                margin-left:0 !important;
+                
+            }
+
+            h2{
+                font-size: 30px;
+            }
+            p{
+                text-align: center;
+                font-size: 15px;
             }
         }
     }
 }
 
+@media (max-width: 1000px) {
+    .studio {
+        .photo-container {
+            .photo-about-studio {
+                height: 300px;
+            }
+        }
+        .studio-me {
+            p{
+                width: 90%;
+            }
+        }  
+    }
+
+}
 
    
 
@@ -460,7 +550,7 @@ h2{
 }
 @media (max-width: 992px) {
     .card-container{
-        margin: 30px 10px 30px 10px;
+        margin: 0 !important;
         .card{
             
             .card-content{
@@ -502,28 +592,28 @@ h2{
         flex-direction: column;
         align-items: center;
         gap:10px;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0 !important;
         .card{
             
             .card-content{
-                width:250px;
-                height: 400px;
+                width:200px;
+                height: auto;
                 
             }
                 .img-cards{
                     height: auto;
-                    width: 150px !important;
+                    width: 100px !important;
                     margin-top:20px;
                     
                     
                 }
 
                 h3{
-                    font-size: 25px !important;
+                    font-size: 18px !important;
                 }
 
                 p{
-                    font-size: 18px !important;
+                    font-size: 14px !important;
                     display: flex;
                     align-items: center;
                     margin-right: 20px;
@@ -532,9 +622,10 @@ h2{
                 }
 
                 .btn-contact-3{
-                    width: 150px !important;
-                    font-size: 25px !important;
+                    width: 120px !important;
+                    font-size: 20px !important;
                     margin-top: 30px !important;
+                    margin-bottom: 20px;
                 }
             }
     }

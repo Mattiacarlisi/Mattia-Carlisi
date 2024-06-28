@@ -148,7 +148,7 @@ header .dropdown_menu .dropdown-button-contact .button-dropdown-contact-script {
   cursor: pointer;
 }
 
-@media (min-width: 993px) {
+@media (min-width: 992px) {
   .dropdown_menu {
     display: none !important;
   }
@@ -156,10 +156,8 @@ header .dropdown_menu .dropdown-button-contact .button-dropdown-contact-script {
 @media screen and (max-width: 480px) {
   .navbar {
     flex-direction: column;
-    flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    max-width: 100%;
   }
   .navbar .links {
     display: none !important;
@@ -172,6 +170,7 @@ header .dropdown_menu .dropdown-button-contact .button-dropdown-contact-script {
   }
   .navbar .logo {
     width: 100px !important;
+    margin-top: 0 !important;
   }
   .navbar .name {
     display: none;
@@ -287,7 +286,7 @@ section .profile-intro .characteristics-intro {
 .about-section {
   display: flex;
   align-items: flex-start;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .about-section figure {
   margin: 0;
@@ -302,12 +301,16 @@ section .profile-intro .characteristics-intro {
 .about-section .about-me {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 70%;
 }
 .about-section .about-me h2 {
   margin-top: 0;
+  font-size: 45px;
 }
 .about-section .about-me p {
-  text-align: justify; /* Centrato */
+  text-align: justify;
+  font-size: 25px;
 }
 .about-section .about-me .btn-contact-1 {
   color: white;
@@ -322,7 +325,6 @@ section .profile-intro .characteristics-intro {
   padding: 8px 20px;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 }
 .about-section .about-me .btn-contact-1:hover {
   background: #86c3fc;
@@ -336,26 +338,29 @@ section .profile-intro .characteristics-intro {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .studio .photo-container {
   order: 2;
-  width: 300px;
+  width: 500px;
 }
 .studio .photo-container .photo-about-studio {
   width: auto;
-  height: 400px;
+  height: 500px;
   border-radius: 10%;
 }
 .studio .studio-me {
   order: 1;
-  max-width: 60%;
+  max-width: 70%;
   margin-left: 20px;
 }
 .studio .studio-me h2 {
   margin-top: 0;
+  font-size: 45px;
 }
 .studio .studio-me p {
   text-align: justify;
+  font-size: 25px;
 }
 .studio .studio-me .btn-contact-2 {
   color: white;
@@ -445,14 +450,14 @@ h2 {
   width: 100%;
   overflow: hidden;
   background: #c3f2e3;
-  padding: 20px;
+  padding: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 .reviews-container .reviews {
   display: flex;
   white-space: nowrap;
-  animation: scroll-reviews 30s linear infinite;
+  animation: scroll-reviews 60s linear infinite;
 }
 .reviews-container .reviews .review {
   display: inline-block;
@@ -460,12 +465,20 @@ h2 {
   text-align: center;
   white-space: normal;
 }
-.reviews-container .reviews .review .stars {
+.reviews-container .reviews .review .reviews-container {
+  width: 100%;
+  overflow: hidden;
+  background: #c3f2e3;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.reviews-container .reviews .review .reviews-container .stars {
   color: gold;
   font-size: 24px;
   margin-top: 5px;
 }
-.reviews-container .reviews .review .reviewer {
+.reviews-container .reviews .review .reviews-container .reviewer {
   margin-top: 10px;
   font-style: italic;
 }
@@ -490,18 +503,27 @@ h2 {
 /*maain intro */
 @media (max-width: 620px) {
   .profile-intro .hello-intro {
-    font-size: 15px !important;
+    font-size: 10px !important;
   }
   .profile-intro .name-intro {
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
   .profile-intro .passion-intro {
-    font-size: 14px !important;
+    font-size: 10px !important;
   }
   .profile-intro .characteristics-intro {
-    font-size: 22px;
+    font-size: 12px !important;
   }
 }
+.profile-actions .btn-contact {
+  font-size: 20px;
+}
+
+section figure .profile-photo {
+  width: 150px;
+  border-radius: 10%;
+}
+
 /*main about me  */
 @media (max-width: 620px) {
   .about-section {
@@ -512,26 +534,39 @@ h2 {
   }
   .about-section figure {
     order: 2;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     text-align: center;
   }
   .about-section figure .photo-about-me {
-    height: 300px;
+    height: 250px;
   }
   .about-section .about-me {
     order: 1;
     text-align: center;
   }
   .about-section .about-me p {
-    text-align: justify; /* Testo giustificato */
-    margin-left: 0; /* Rimuovi il margine a sinistra */
-    margin-right: 0; /* Rimuovi il margine a destra */
-    padding: 0 20px; /* Aggiungi padding per evitare che il testo tocchi i bordi */
-    width: 240px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  .about-section .about-me h2 {
+    font-size: 30px;
   }
   .about-section .about-me .btn-contact-1 {
     margin-top: 20px !important;
     margin: 0 auto;
+    font-size: 20px;
+    width: 120px;
+  }
+}
+@media (max-width: 1000px) {
+  .about-section figure .photo-about-me {
+    height: 250px;
+  }
+  .about-section .about-me p {
+    width: 90%;
   }
 }
 /*main studio  */
@@ -540,7 +575,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
+    text-align: center;
   }
   .studio .photo-container {
     margin-left: 0;
@@ -549,10 +585,34 @@ h2 {
     margin-right: 0;
   }
   .studio .photo-container .photo-about-studio {
-    height: 300px;
+    height: 250px;
+  }
+  .studio .studio-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
   .studio .studio-me .btn-contact-2 {
     margin: 0px;
+    font-size: 20px;
+    width: 120px;
+    margin-left: 0 !important;
+  }
+  .studio .studio-me h2 {
+    font-size: 30px;
+  }
+  .studio .studio-me p {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .studio .photo-container .photo-about-studio {
+    height: 300px;
+  }
+  .studio .studio-me p {
+    width: 90%;
   }
 }
 /*maain cards  */
@@ -592,7 +652,7 @@ h2 {
 }
 @media (max-width: 992px) {
   .card-container {
-    margin: 30px 10px 30px 10px;
+    margin: 0 !important;
   }
   .card-container .card .card-content {
     width: 170px;
@@ -625,31 +685,32 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0 !important;
   }
   .card-container .card .card-content {
-    width: 250px;
-    height: 400px;
+    width: 200px;
+    height: auto;
   }
   .card-container .card .img-cards {
     height: auto;
-    width: 150px !important;
+    width: 100px !important;
     margin-top: 20px;
   }
   .card-container .card h3 {
-    font-size: 25px !important;
+    font-size: 18px !important;
   }
   .card-container .card p {
-    font-size: 18px !important;
+    font-size: 14px !important;
     display: flex;
     align-items: center;
     margin-right: 20px;
     margin-left: 20px;
   }
   .card-container .card .btn-contact-3 {
-    width: 150px !important;
-    font-size: 25px !important;
+    width: 120px !important;
+    font-size: 20px !important;
     margin-top: 30px !important;
+    margin-bottom: 20px;
   }
 }
 /* this is a footer*/
